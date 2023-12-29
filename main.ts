@@ -1,6 +1,11 @@
+radio.onReceivedString(function (receivedString) {
+    if (receivedString == "stop") {
+        motors.dualMotorPower(Motor.M0_M1, 0)
+    }
+})
 radio.onReceivedValue(function (name, value) {
     if (name == "x") {
-        basic.showNumber(value)
+    	
     }
 })
 let kanal = 7
