@@ -35,13 +35,13 @@ basic.forever(function () {
     if (motor_links > 100) {
         motor_links = 100
     }
-    if (motor_links < -100) {
+    if (motor_links < 0) {
         motor_links = 0
     }
     if (motor_rechts > 100) {
         motor_rechts = 100
     }
-    if (motor_rechts < -100) {
+    if (motor_rechts < 0) {
         motor_rechts = 0
     }
     motors.dualMotorPower(Motor.M0, motor_links)
